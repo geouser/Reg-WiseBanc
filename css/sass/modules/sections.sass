@@ -1,0 +1,189 @@
+.section
+	padding: 150px 0
+	position: relative
+	
+	@media (max-width: 1199px)
+		padding: 80px 0
+		
+	@media (max-width: 991px)
+		padding: 60px 0
+
+
+
+.section-actions
+
+	.section-heading
+		@media (min-width: 1200px)
+			width: 41.66%
+
+	.container
+		position: relative
+		
+		@media (min-width: 1350px)
+			max-width: 1330px 
+
+	.actions
+		position: absolute
+		top: 52%
+		transform: translateY(-50%)
+		width: 50%
+		right: 0
+		padding: 0 15px
+		
+
+		@media (max-width: 1349px)
+			width: 58%
+			
+		@media (max-width: 1199px)
+			position: static
+			padding-top: 80px
+			width: 100%
+			max-width: 800px
+			margin: 0 auto
+			transform: none  
+			margin-bottom: -40px 
+			
+		@media (max-width: 767px)
+			padding-top: 60px
+			margin-bottom: -30px  
+
+
+
+
+
+.section-heading
+	text-align: center
+	
+	h1,
+	h2
+		font-size: 35px
+		font-weight: 700
+		text-transform: uppercase  
+		
+		@media (max-width: 1199px)
+			font-size: 32px
+			
+		@media (max-width: 991px)
+			font-size: 30px
+			
+		@media (max-width: 767px)
+			font-size: 28px
+			margin-bottom: 0.25em 
+			
+		@media (max-width: 575px)
+			font-size: 26px    
+		
+
+
+	.subtitle
+		font-size: 18px
+		font-weight: 300 
+		max-width: 690px
+		display: inline-block 
+		
+		@media (max-width: 767px)
+			font-size: 16px 
+		
+
+
+
+
+
+
+.action
+	display: block
+	max-width: 100%
+	text-align: center
+	font-size: 18px 
+	
+	@media (min-width: 1200px)
+		&.action-2
+			transform: translateY(70px)
+			
+		&.action-3
+			transform: translateY(-30px)
+			
+	@media (max-width: 1199px)
+		margin-bottom: 40px 
+			
+	@media (max-width: 767px)
+		font-size: 14px 
+		margin-bottom: 30px 
+		
+	@media (max-width: 575px)
+		font-size: 12px
+	
+	.icon
+		width: 105px
+		height: 105px
+		border: 3px solid $info-color
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0 auto
+		border-radius: 50%
+		background-color: #FFF 
+		position: relative
+		
+		@media (max-width: 767px)
+			width: 80px
+			height: 80px
+		
+		@media (min-width: 1200px)
+			&:after
+				content: ''
+				width: 1px
+				height: 250px
+				position: absolute
+				left: 50%
+				bottom: 100%
+				background-color: #B6D1E5 
+				z-index: -1 
+		
+		img
+			max-width: 30px
+			max-height: 30px
+			display: block  
+			
+
+	.content
+		padding-top: 15px 
+		
+
+
+
+
+
+.contact-widgets
+	padding: 80px 0 40px
+	
+	@media (max-width: 575px)
+		padding: 60px 0 30px
+	
+
+
+.contact-widget
+	margin-bottom: 40px
+	text-align: center
+	
+	@media (max-width: 575px)
+		margin-bottom: 30px 
+	
+	.icon
+		display: block
+		max-width: 100%
+		width: 66px 
+		margin: 0 auto
+		
+		
+	.content
+		font-size: 18px
+		padding-top: 30px  
+		
+		@media (max-width: 767px) and (min-width: 576px)
+			font-size: 16px 
+			padding-top: 5px 
+			
+		@media (max-width: 575px)
+			padding-top: 5px
+			font-size: 12px

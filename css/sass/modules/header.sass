@@ -11,6 +11,7 @@
 		.row
 			height: 100%
 			
+			
 .headroom--unpinned
     transform: translateY(-100%)
 .headroom--pinned,
@@ -46,3 +47,40 @@
 	transform: rotate(0deg)
 	transition: .5s ease-in-out
 	cursor: pointer
+	
+
+
+
+
+.language-switcher
+	position: fixed
+	top: 20px
+	right: 15px
+	color: #fff
+	
+	@media (max-width: 767px)
+		top: 12px
+		position: absolute
+	
+	.nh-language-switcher .js-lang-select-holder:after
+		background-image: url(../images/faq-arrow-white.svg) 
+		
+
+
+.page-template-template-otp,
+.page-template-template-success
+	.language-switcher
+		z-index: 20 
+		color: #000
+		top: 30px
+		position: absolute
+		
+		@media (max-width: 767px)
+			top: 22px
+			
+		@media (max-width: 575px)
+			.nh-language-switcher .js-lang-select .js-lang-select-holder .name
+				display: none
+		
+		.nh-language-switcher .js-lang-select-holder:after
+			background-image: url(../images/faq-arrow.svg) 

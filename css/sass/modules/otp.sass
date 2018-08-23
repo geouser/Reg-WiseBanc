@@ -1,0 +1,358 @@
+// otp-registration page
+.onescreen-page
+    min-height: 99.8%
+    padding: 70px 0 0 !important
+    z-index: 102
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    line-height: 1.8
+    background-image: url(../images/otp.jpg)
+    background-repeat: no-repeat 
+    background-position: 50% 50%
+    background-size: cover   
+    
+    @media (max-width: 767px)
+        padding-top: 50px!important
+        
+
+    &-header
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.13)
+        background-color: #FFF 
+        padding: 15px
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        display: flex
+        align-items: center
+        z-index: 10 
+        height: 90px
+        
+        @media (max-width: 767px)
+            padding: 10px
+            height: 70px
+        
+        .logo
+            margin: 0 auto!important
+            max-width: 220px
+            
+            @media (max-width: 767px)
+                max-width: 160px 
+            
+            img
+                width: auto!important
+                display: block
+                max-width: 100%
+                max-height: 100%  
+    
+    &-body
+        padding: 40px 30px
+        width: 100%
+        min-height: 100%
+        display: flex
+        align-items: center 
+        
+        @media (max-width: 767px)
+            padding: 20px 0
+
+    &__info 
+        max-width: 600px
+        margin: 0 auto
+        padding: 20px 0
+            
+        h2 
+            @media (max-width: 576px)
+                font-size: 1.3em
+            & + * 
+                margin-top: 40px
+                @media (max-width: 992px)
+                    margin-top: 20px
+        ul 
+            @media (max-width: 576px)
+                margin-top: 20px
+            li 
+                font-weight: 400
+                font-size: 17px
+                @media (max-width: 576px)
+                    font-size: 14px
+            & + * 
+                margin-top: 40px
+                @media (max-width: 992px)
+                    margin-top: 20px
+        p 
+            font-size: 17px
+            margin-bottom: 1.5em
+            &:last-child
+                margin-bottom: 0
+            @media (max-width: 576px)
+                font-size: 14px
+                margin-bottom: 1em
+                
+
+        a
+            color: $info-color
+            text-decoration: underline
+            
+            &:hover
+                color: $info-hover-color
+                
+
+        small 
+            font-size: 14px
+            font-weight: 300
+            display: block
+            line-height: 1.9
+            @media (max-width: 576px)
+                font-size: 13px
+
+        &.mobile-show
+            padding-bottom: 0
+            h2
+                & + * 
+                    margin-top: 0px
+
+        .mobile-show
+            h2
+                & + p
+                    margin-top: 0px
+
+        .tabs--form
+            box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.13)
+            @media (max-width: 991px)
+                width: 100%
+
+            .ui-tabs-panel
+                margin-top: 0
+
+        * + .tabs
+            margin-top: 20px
+
+.form
+    padding: 35px 25px 35px 25px
+    //background-color: #fff
+    color: $text
+    
+
+    @media (max-width: 400px)
+        padding: 20px 15px
+    @media (max-width: 360px)
+        padding: 20px 10px
+    .btn
+        display: block
+        width: 100%
+        margin-top: 15px
+        &:first-child
+            margin-top: 0
+    .row
+        margin: 0 -7px
+        & > div 
+            padding-left: 7px
+            padding-right: 7px
+    small
+        display: block
+        margin: 10px auto 0
+        text-align: center
+        line-height: 1.4
+        @media (max-width: 576px)
+            font-size: 12px
+
+.otp-form
+    //padding-top: 0
+    
+    .btn 
+        margin-top: 0
+        height: 50px
+        min-width: 0
+        @media (max-width: 400px)
+            height: 40px
+
+    .form-group
+        position: relative
+        margin-bottom: 15px
+        
+        @media (max-width: 400px)
+            margin-bottom: 10px
+        
+        .pin
+            cursor: pointer
+            padding-left: 15px
+            padding-right: 15px
+            
+
+        &--checkbox
+            input
+                opacity: 0
+                position: absolute
+                left: 0
+                cursor: pointer
+                &:checked
+                    & + label 
+                        i 
+                            background-image: url('../images/checked.svg')
+                            background-size: 80% auto
+                            background-position: 50% 50%
+                            background-repeat: no-repeat
+
+            label 
+                padding-left: 28px
+                font-size: 16px
+                display: block
+                cursor: pointer
+                line-height: 1.4
+                i 
+                    display: block
+                    position: absolute
+                    left: 0
+                    top: 4px
+                    width: 16px
+                    height: 16px
+                    border: 1px solid $text
+                    pointer-events: none
+                @media (max-width: 576px)
+                    font-size: 14px
+                @media (max-width: 340px)
+                    font-size: 12px
+                
+
+
+    .form-control,
+        width: 100%
+        height: 50px
+        padding-left: 15px
+        background-color: $grey-light
+        border: none
+        -webkit-appearance: none
+        
+        @media (max-width: 576px)
+            font-size: 14px
+        @media (max-width: 400px)
+            height: 40px
+        @media (max-width: 340px)
+            font-size: 12px
+        
+        &.error
+            border: 1px solid red
+        
+    
+
+.form-control
+    //border-right: 10px solid $grey-light
+            
+
+.tooltip
+    width: 15px
+    height: 15px
+    position: absolute
+    right: 12px
+    top: 0
+    bottom: 0
+    margin: auto
+    z-index: 2
+    @media (max-width: 400px)
+        width: 12px
+        height: 12px
+        right: 6px
+    i 
+        width: 100%
+        height: 100%
+        display: block
+        background-image: url('../images/question.svg')
+        background-size: 100% 100%
+        cursor: pointer
+        background-color: $grey-light
+    p 
+        visibility: hidden
+        opacity: 0
+        transform: translateX(-20px)
+        position: absolute
+        bottom: 100%
+        right: 105%
+        width: 350px
+        padding: 10px
+        background: #fff
+        font-size: 14px
+        line-height: 1.6
+        transition: all .2s
+        box-shadow: 0 0 10px rgba(0,0,0,.1)
+        @media (max-width: 420px)
+            width: 270px
+            right: 0
+            font-size: 13px
+            line-height: 1.4
+    &.active
+        p 
+            visibility: visible
+            opacity: 1
+            transform: none
+    @media( min-width: 1200px)
+        &:hover
+            p 
+                visibility: visible
+                opacity: 1
+                transform: none
+
+
+.intl-tel-input
+    display: block
+.intl-tel-input .country-list
+    z-index: 11
+    max-height: 253px
+    width: 400px
+.intl-tel-input .country-list .country
+    font-size: 15px
+    padding-right: 0
+    padding-left: 7px
+    
+
+
+
+.otp-section
+    &__reenter
+        color: $info-color
+        text-decoration: underline
+        font-weight: 400
+        
+        &:hover
+            text-decoration: none
+            
+    #result-text,
+    #send-pin-group,
+    #phone-group
+        display: none
+
+
+    &--reenter
+        #send-pin-group,
+        #phone-group
+            display: block
+
+        #enter-pin-group,
+        #submit,
+        .otp-section__reenter
+            display: none
+        
+
+    &--thanks
+        h2 
+            display: none !important
+            
+        h3 
+            display: block
+            
+
+
+.intl-tel-input .country-list
+    font-family: Arial
+    color: $text-color
+    
+
+
+.pin-tab,
+.phone-tab,
+.success-tab
+    display: none
+    
+    &.active
+        display: block

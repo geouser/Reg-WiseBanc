@@ -69,6 +69,27 @@
             "placeholder": ""
         },
         {
+            "key": "field_5b28b3d45130e",
+            "label": "Title font-size in px",
+            "name": "font_size",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
             "key": "field_5b224cee35c65",
             "label": "Content",
             "name": "",
@@ -83,6 +104,25 @@
             },
             "placement": "left",
             "endpoint": 0
+        },
+        {
+            "key": "field_5b28b3b25130d",
+            "label": "Display title",
+            "name": "display_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5b224bd435c5c",
@@ -230,6 +270,60 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_5b291a5b7b428",
+            "label": "CTA label",
+            "name": "cta_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b291a2f7b426",
+            "label": "Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b291a367b427",
+            "label": "Form CTA",
+            "name": "form_cta",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -249,5 +343,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1528976146
+    "modified": 1529420386
 }

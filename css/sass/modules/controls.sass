@@ -10,12 +10,60 @@
 	font-weight: 500 
 	cursor: pointer
 	transition: all 0.3s ease
+	position: relative
+	
+	@media (max-width: 767px)
+		padding-left: 20px
+		padding-right: 20px
+		
+	@media (max-width: 400px)
+		height: 40px
+		padding-top: 10px
+		padding-bottom: 10px    
+	
+	&:after
+		content: ''
+		width: 18px
+		height: 18px
+		background-image: url(../images/reload-symbol.svg)
+		background-size: 100%  
+		background-position: 50% 50%
+		background-repeat: no-repeat  
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -9px 
+		margin-top: -9px 
+		animation: spin 4s linear infinite
+		opacity: 0
+		visibility: hidden
+		
+	&:disabled
+		color: #888!important
+		background-color: #e5e4e2!important
+		pointer-events: none
+		
+	&.sending
+		color: transparent!important
+		pointer-events: none
+		
+		&:after
+			opacity: 1
+			visibility: visible
 
 	&-primary
 		background-color: $primary-color 
 		
-		&:hover
-			background-color: $primary-hover-color 
+		&:hover,
+		&.sending
+			background-color: $primary-hover-color !important
+			
+	&-info
+		background-color: $info-color 
+		
+		&:hover,
+		&.sending
+			background-color: $info-hover-color !important
 			
 
 
@@ -26,7 +74,10 @@
 		font-size: 8.3px  
 
 	
-	
+@keyframes spin
+	100%
+		transform: rotate(360deg)
+
 
 .form-control
 	display: block
@@ -39,6 +90,15 @@
 	background-color: transparent
 	color: inherit 
 	
+	+placeholder()
+		opacity: 0.5
+	
+
+.intl-tel-input
+	width: 100%
+	
+.intl-tel-input.iti-container
+	z-index: 100000 
 
 .form-group
 	margin-bottom: 30px 
@@ -64,6 +124,10 @@
 				position: absolute
 				left: 0
 				top: 3px
+				
+			a
+				color: $primary-color
+				text-decoration: underline
 				
 		.form-control:checked + label i
 			background-image: url(../images/check.svg)
